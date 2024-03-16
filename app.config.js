@@ -35,7 +35,7 @@ module.exports = {
         provider: "MongoDB",
         name: "digo_live_db",
         database_url: getENV(
-            "mongodb://127.0.0.1:27017/digo_live_db",
+            process.env.DATABASE_URL,
             "mongodb://127.0.0.1:27017/digo_live_db"
         ),
     },
